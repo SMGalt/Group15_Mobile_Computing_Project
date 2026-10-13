@@ -1,0 +1,1 @@
+<resources><attr name="deskPaper" format="color"/><attr name="deskSurface" format="color"/><attr name="deskInk" format="color"/><attr name="deskMuted" format="color"/><attr name="deskLine" format="color"/><attr name="deskHighlight" format="color"/><attr name="deskQuery" format="color"/><attr name="deskConfirmed" format="color"/></resources>

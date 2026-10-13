@@ -1,0 +1,177 @@
+{
+  "maths": [
+    {
+      "input": "x^2 + y_1",
+      "output": "x² + y₁"
+    },
+    {
+      "input": "\\frac{a+b}{2}",
+      "output": "(a+b/2)"
+    },
+    {
+      "input": "\\sqrt{x^2}",
+      "output": "√(x²)"
+    },
+    {
+      "input": "\\alpha + \\beta",
+      "output": "α + β"
+    },
+    {
+      "input": "\\sum_{i=1}^{n} x_i",
+      "output": "∑ᵢ₌₁ⁿ xᵢ"
+    },
+    {
+      "input": "\\unknown{x}",
+      "output": null
+    },
+    {
+      "input": "\\frac{a}",
+      "output": null
+    },
+    {
+      "input": "x^{?}",
+      "output": null
+    },
+    {
+      "input": "\\sin{x}",
+      "output": "sin x"
+    },
+    {
+      "input": "\\binom{n}{k}",
+      "output": "(n/k)"
+    }
+  ],
+  "chem": [
+    {
+      "input": "H2O",
+      "valid": true,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "2H2 + O2 -> 2H2O",
+      "valid": true,
+      "balanced": true,
+      "tally": [
+        {
+          "symbol": "H",
+          "have": 4,
+          "need": 4,
+          "ok": true
+        },
+        {
+          "symbol": "O",
+          "have": 2,
+          "need": 2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "input": "H2 + O2 -> H2O",
+      "valid": true,
+      "balanced": false,
+      "tally": [
+        {
+          "symbol": "H",
+          "have": 2,
+          "need": 2,
+          "ok": true
+        },
+        {
+          "symbol": "O",
+          "have": 2,
+          "need": 1,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "input": "Fe2+",
+      "valid": true,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "(NH4)2SO4",
+      "valid": true,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O",
+      "valid": false,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "word",
+      "valid": false,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "NaCl",
+      "valid": true,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "Ca(OH)2",
+      "valid": true,
+      "balanced": null,
+      "tally": []
+    },
+    {
+      "input": "2Na + Cl2 -> 2NaCl",
+      "valid": true,
+      "balanced": true,
+      "tally": [
+        {
+          "symbol": "Na",
+          "have": 2,
+          "need": 2,
+          "ok": true
+        },
+        {
+          "symbol": "Cl",
+          "have": 2,
+          "need": 2,
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "hashes": [
+    {
+      "input": "",
+      "hash": "ztntfp"
+    },
+    {
+      "input": "abc",
+      "hash": "7aigaz"
+    },
+    {
+      "input": "# Notes\n\nSecond box",
+      "hash": "cwfzi6"
+    },
+    {
+      "input": "中文内容",
+      "hash": "141uy4z"
+    }
+  ],
+  "uids": [
+    {
+      "input": "one",
+      "id": "86ddf47a-e4cc-51b3-9788-574c05ea4901"
+    },
+    {
+      "input": "calendar-event-123",
+      "id": "029ab1ce-8468-53fe-97e2-e4d2c0a99251"
+    },
+    {
+      "input": "éxam",
+      "id": "25b3d833-a1fc-5ca3-9d67-e9e1388416d1"
+    }
+  ]
+}

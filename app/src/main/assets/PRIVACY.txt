@@ -1,0 +1,16 @@
+StudyDesk Java — Data and privacy
+Revision: 2026-10-native1
+
+Guest use stores study records and attachments privately on this Android device. Guest records are not uploaded. Android automatic app backup is disabled; exports are files you choose to save and should keep private.
+
+Cloud features connect only after you configure your own HTTPS project and sign in. Your account's study records, attachments, profile and feedback go to that project. Guest records are copied into an account only if you choose Copy. The original author's Supabase endpoint is rejected. The group has not supplied or deployed a cloud project for this handoff.
+
+Cloud keys, auth tokens and OAuth verifier are encrypted with Android Keystore. Study records and the small per-account feedback queue use app-private storage. Exports contain study data and a whitelist of preferences, but do not contain credentials or sessions. They can include personal study notes and attachments.
+
+Optional error reporting is off by default; enabling it queues a short redacted error report for your project. Optional AI debrief is off by default; requesting it sends up to 400 characters from the selected session note to your configured ai-generate function. These services need your own backend and provider decisions.
+
+Signing out preserves each account's device-private records for offline use and returns to the separate guest desk. Deleting a study item hides it and retains a tombstone for sync. Attachment bytes can remain privately until app data is cleared. Export a backup before clearing app storage/uninstalling. Android Settings > Apps > StudyDesk Java > Storage > Clear storage removes local records, files, queue and sessions.
+
+Cloud account deletion requires your own delete-account function; it is unverified without a group backend. Your backend administrator must supply the deployed service's privacy policy and retention details before public distribution.
+
+StudyDesk features, translations and grammar originate from Limekana/StudyDesk 1.17.0 (MIT), Limecore Studio. The original author's policy is available separately at https://limecore.dev/privacy and describes their hosted service, not this local migration.
